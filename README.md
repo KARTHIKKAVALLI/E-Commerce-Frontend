@@ -39,9 +39,13 @@ This project provides an interactive shopping interface for users, featuring pro
 
 
 👨‍💻 Author
+
 Kavali Venkata Sai Sri Karthik
+
 📧 karthikkavali540@gmail.com
+
 🌐 karthikkavali9.com
+
 
 <img width="1887" height="962" alt="homepage" src="https://github.com/user-attachments/assets/1c81c523-2165-48d2-9d18-df2023b56ee9" />
 
