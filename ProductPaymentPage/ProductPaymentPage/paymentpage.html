@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karthik</title>
+    <link rel="icon" href="/Pictures/crown.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="paymentpage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div class="brand">
+            <a href="#"><b>Karthik Group</b></a>
+        </div>
+    </header>
+
+    <div class="maincompany">
+        <div class="paymentmode">
+            <h1>Payment Options (Only Cash On Delivery Avaliable)</h1>
+            <label class="container">Wallets
+                <input type="radio" name="radio" onclick="toggleForm(false)">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">Credit/Debit Card
+                <input type="radio" name="radio" onclick="toggleForm(true)">
+                <span class="checkmark"></span>
+            </label>
+            <div id="checkoutForm">
+                <h3>Enter Your Payment Details</h3>
+                <form action="/action_page.php">
+                    <label for="cname">Name on Card</label>
+                    <input type="text" id="cname" name="cardname" placeholder="John Doe">
+                    
+                    <label for="ccnum">Card Number</label>
+                    <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                    
+                    <label for="expmonth">Expiry Month</label>
+                    <input type="text" id="expmonth" name="expmonth" placeholder="September">
+                    
+                    <label for="expyear">Expiry Year</label>
+                    <input type="text" id="expyear" name="expyear" placeholder="2025">
+                    
+                    <label for="cvv">CVV</label>
+                    <input type="text" id="cvv" name="cvv" placeholder="123">
+                    
+                    <input type="submit" value="Submit Payment" class="btn">
+                </form>
+            </div>
+            <label class="container">Net Banking
+                <input type="radio" name="radio" onclick="toggleForm(false)">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">Cash On Delivery
+                <input type="radio" name="radio" onclick="toggleForm(false)">
+                <span class="checkmark"></span>
+            </label>
+        </div>
+    
+    <script>
+        function toggleForm(show) {
+            const form = document.getElementById('checkoutForm');
+            form.style.display = show ? 'block' : 'none';
+        }
+    </script>
+    <div class="sideImage">
+        <img src="/Pictures/purchase.jpg" alt="image">
+    </div>
+</div>
+
+<div class="orderbutton">
+    <button type="button" class="button">Place Order</button>
+</div>
+</body>
+</html>

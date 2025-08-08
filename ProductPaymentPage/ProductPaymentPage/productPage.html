@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karthik Store</title>
+    <link rel="icon" href="/Pictures/crown.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="productPage.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="brand">
+            <a href="/HomePage/main.html"><b>Karthik Group</b></a>
+        </div>
+        <nav>
+            <ul>
+                <li class="search-container">
+                    <form class="example" action="/action_page.php">
+                        <input type="text" placeholder="Search..." name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </li>                
+                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                <li><a href="#"><i class="fa fa-shopping-bag"></i></a></li>
+                <li><a href="mailto:karthikkavali540@gmail.com"><i class="fa fa-envelope"></i></a></li>
+                <li><a href="LoginSignupPage/loginSignupPage.html"><i class="fa fa-user"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="otherproductline">
+        <div class="productlinks">
+            <ul id="ulproductline">
+                <li><a href="#">Mobile Phones</a></li>
+                <li><a href="#">Tablets</a></li>
+                <li><a href="#">Fashion</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Kitchen Appliances</a></li>
+                <li><a href="#">Furniture</a></li>
+                <li><a href="#">Beauty</a></li>
+                <li><a href="#">Food</a></li>
+                <li><a href="#">TV</a></li>
+                <li><a href="#">Refrigerator</a></li>
+                <li><a href="#">Air Conditioner</a></li>
+                <li><a href="#">Laptops</a></li>
+                <li><a href="#">Airpods</a></li>
+            </ul>
+        </div>
+    </div>
+
+    
+<div class="main-image-box">
+        <div class="product-gallery">
+    <!-- Side Images (Thumbnails) -->
+    <div class="thumbnails">
+        <img src="/Pictures/advertize.jpg" alt="Thumbnail 1" onclick="changeImage('/Pictures/advertize.jpg')">
+        <img src="/Pictures/iphone1.jpg" alt="Thumbnail 2" onclick="changeImage('/Pictures/iphone1.jpg')">
+        <img src="/Pictures/advertize.jpg" alt="Thumbnail 3" onclick="changeImage('/Pictures/advertize.jpg')">
+        <img src="/Pictures/advertize.jpg" alt="Thumbnail 4" onclick="changeImage('/Pictures/advertize.jpg')">
+    </div>
+
+    <!-- Main Image and Buttons -->
+    <div class="main-image-container">
+        <div class="main-image">
+            <img id="mainImage" src="/Pictures/iphone1.jpg" alt="Main Product Image">
+        </div>
+
+        <!-- Buttons under the main image -->
+        <div class="buttons">
+            <button class="add-to-cart">Add to Cart</button>
+            <button class="buy-now"  onclick="window.location.href='paymentpage.html'">Buy Now</button>
+        </div>
+    </div>
+</div>
+
+
+<script>function changeImage(imageSrc) {
+    document.getElementById("mainImage").src = imageSrc;
+}
+</script>
+</div>
+
+<div class="content-box">
+    <div class="productname">
+        <span class="brandname">Vivo T2 Pro 5G (New Moon Black, 256 GB)  (8 GB RAM)</span>
+        <div id="price">
+            <span class="price"> <span class="price">&#8377;</span>12,000</span>
+        </div>
+    </div>
+    <div class="avaliableoffers">
+        <span span class="brandname">Available offers</span>
+            <br>
+            <br>
+            <i class="fa-solid fa-tag"></i> Bank Offer5% Unlimited Cashback on Flipkart Axis Bank Credit Card<a href="#">T&C</a> <a href="#">Apply now</a>
+            <br>
+            <i class="fa-solid fa-tag"></i> Bank Offer₹2000 Off On All Bank Credit and Debit Card Transactions<a href="#"> T&C</a>
+            <br>
+            <i class="fa-solid fa-tag"></i> Special PriceGet extra ₹4000 off (price inclusive of cashback/coupon)<a href="#"> T&C</a>
+            <br>
+            <i class="fa-regular fa-calendar-days"></i> No cost EMI ₹4,000/month. Standard EMI also availableView Plans
+            <br>
+            <i class="fa-solid fa-tag"></i> Extra 10% off on Combo with Mobile<a href="#"> T&C</a>
+    </div>
+
+    <div class="specifications">
+           <h4>Specifications</h4> 
+    <hr>
+            <h4>General</h4>
+            <table>
+        <td class="tdfirst">In The Box</td>
+        <td class="tdsecond">Handset, USB Cable, Charger, Eject Tool, Phone Case, Protective Film (Applied), Warranty Card, Quick Start Guide</td>
+    </tr>
+    <tr>
+        <td class="tdfirst">Model Number</td>
+        <td class="tdsecond">V2321</td>
+    </tr>
+    <tr>
+        <td class="tdfirst">Model Name</td>
+        <td class="tdsecond">T2 Pro 5G</td>
+    </tr>
+    <tr>
+        <td class="tdfirst">Color</td>
+        <td class="tdsecond">New Moon Black</td>
+    </tr>
+    <tr>
+        <td class="tdfirst">Browse Type</td>
+        <td class="tdsecond">Smartphones</td>
+    </tr>
+    <tr>
+        <td class="tdfirst">SIM Type</td>
+        <td class="tdsecond">Dual Sim</td>
+    </tr>
+    <tr>
+        <td class="tdfirst">Hybrid SIM Slot</td>
+        <td class="tdsecond">No</td>
+    </tr>
+    <tr>
+        <td class="tdfirst">Touchscreen</td>
+        <td class="tdsecond">Yes</td>
+    </tr>
+    <tr>
+        <td class="tdfirst">OTG Compatible</td>
+        <td class="tdsecond">Yes</td>
+    </tr>
+    </table>
+<hr>
+    <h4>Display Features</h4>
+    <table>
+        <tr>
+            <th style="float: left;"></th>
+            <th></th>
+        </tr>
+        <tr>
+            <td class="tdfirst">Operating System</td>
+            <td class="tdsecond">Android 13</td>
+        </tr>
+        <tr>
+            <td class="tdfirst">Processor Brand</td>
+            <td class="tdsecond">Mediatek</td>
+        </tr>
+        <tr>
+            <td class="tdfirst">Processor Type</td>
+            <td class="tdsecond">Dimensity 7200</td>
+        </tr>
+        <tr>
+            <td class="tdfirst">Processor Core</td>
+            <td class="tdsecond">Octa Core</td>
+        </tr>
+        <tr>
+            <td class="tdfirst">Primary Clock Speed</td>
+            <td class="tdsecond">2.8 GHz</td>
+        </tr>
+        <tr>
+            <td class="tdfirst">Secondary Clock Speed</td>
+            <td class="tdsecond">2 GHz</td>
+        </tr>
+        <tr>
+            <td class="tdfirst">Operating Frequency</td>
+            <td class="tdsecond">2G GSM: 850 MHz/900 MHz/1800 MHz/1900 MHz, 3G WCDMA: B1/B4/B5/B8, 4G FDD LTE: B1/B3/B4/B5/B8/B28A, 4G TD LTE: B34/B38/B39/B40/B41, 5G: n1/n3/n5/n8/n28A/n38/n40/n41/n77/n78</td>
+        </tr>
+</table>
+<hr>
+
+<h4>Display Features</h4>
+    <table>
+        <tr>
+            <td class="tdfirst">Operating System</td>
+            <td class="tdsecond">Android 13</td>
+        </tr>
+        <tr>
+            <td class="tdfirst">Processor Brand</td>
+            <td class="tdsecond">Mediatek</td>
+        </tr>
+        <tr>
+            <td class="tdfirst">Processor Type</td>
+            <td class="tdsecond">Dimensity 7200</td>
+        </tr>
+        <tr>
+            <td class="tdfirst">Processor Core</td>
+            <td class="tdsecond">Octa Core</td>
+        </tr>
+        <tr>
+            <td class="tdfirst">Primary Clock Speed</td>
+            <td class="tdsecond">2.8 GHz</td>
+        </tr>
+        <tr>
+            <td class="tdfirst">Secondary Clock Speed</td>
+            <td class="tdsecond">2 GHz</td>
+        </tr>
+        <tr>
+            <td class="tdfirst">Operating Frequency</td>
+            <td class="tdsecond">2G GSM: 850 MHz/900 MHz/1800 MHz/1900 MHz, 3G WCDMA: B1/B4/B5/B8, 4G FDD LTE: B1/B3/B4/B5/B8/B28A, 4G TD LTE: B34/B38/B39/B40/B41, 5G: n1/n3/n5/n8/n28A/n38/n40/n41/n77/n78</td>
+        </tr>
+    </table>
+    <hr>
+        <h4>Memory & Storage Features</h4>
+        <table>
+            <tr>
+                <td class="tdfirst">Internal Storage</td>
+                <td class="tdsecond">256 GB</td>
+            </tr>
+            <tr>
+                <td class="tdfirst">RAM</td>
+                <td class="tdsecond">8 GB</td>
+            </tr>            
+        </table>
+    </div>
+</div>
+
+
+</body>
+</html>

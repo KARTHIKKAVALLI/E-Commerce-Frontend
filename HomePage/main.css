@@ -1,0 +1,427 @@
+body {
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* CSS for brand and navigation */
+.brand a {
+    margin-left: 550px;
+    letter-spacing: 5px;
+    font-family: Monospace;
+    font-size: xx-large;
+    text-decoration: none;
+    color: black;
+    font-weight: 800;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: white;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin-left: 10px;
+}
+
+li a {
+    color: black;
+    font-size: x-large;
+    text-align: center;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+/* Search container */
+#search-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* Search bar styling */
+#search-bar {
+    width: 0;
+    opacity: 0;
+    padding: 4px 10px;
+    font-size: x-large;
+    border: 1px solid black;
+    border-radius: 4px;
+    outline: none;
+    transition: width 0.4s ease, opacity 0.4s ease;
+}
+
+/* Show search bar when active */
+#search-bar.active {
+    width: 200px;
+    opacity: 1;
+    padding-left: 35px; /* Extra padding for the icon */
+}
+
+/* Position the search icon inside the search bar */
+#search-icon {
+    position: absolute;
+    color: black;
+    font-size: x-large;
+    text-align: center;
+    margin-bottom: 5px;
+    text-decoration: none;
+}
+
+/* Show search icon inside the search bar on hover */
+#search-container:hover #search-icon {
+    opacity: 1;
+}
+
+/* Dropdown styling */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 90px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    font-size: large;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* ---------------other products -------*/
+div.varietyProducts {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping to keep everything in one row */
+    overflow-x: auto; /* Allow horizontal scrolling if content exceeds the viewport width */
+    margin: 15px;
+    gap: 10px; /* Adds space between each product */
+    margin-top: 18px;
+}
+div.gallery {
+    border: 1px solid #ccc;
+    width: 190px;
+    flex: 0 0 auto; /* Prevents the gallery items from stretching */
+}
+
+div.gallery img {
+    width: 100%;
+    height: 180px;
+}
+  div.gallery:hover {
+    border: 2px solid #777;
+  }
+  
+ div.desc {
+    padding: 15px;
+    text-align: center;
+    font-family: inter_semi_bold, fallback-inter_semi_bold, Arial, sans-serif;;
+}
+
+/* --------------offers---------------*/
+
+.slideshow-container {
+    position: relative; /* Positioning for absolute children */
+    max-width: 100%; /* Set the maximum width of the slideshow */
+    height: 400px; /* Fixed height for the slideshow */
+    overflow: hidden; /* Hide overflow content */
+    margin: auto; /* Center the slideshow */
+}
+
+.mySlides {
+    display: none; /* Hide all slides by default */
+    position: relative; /* Position for the number text */
+    width: 100%; /* Full width of the slideshow */
+    height: 100%; /* Full height of the slideshow */
+}
+
+.mySlides img {
+    width: 100%; /* Set the width to fill the container */
+    height: 100%; /* Set the height to fill the container */
+    object-fit: cover; /* Cover the container without distortion */
+    position: absolute; /* Position to fill the slide */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+}
+
+.numbertext {
+    position: absolute; /* Position the number text */
+    top: 10px; /* Adjust the position */
+    left: 10px; /* Adjust the position */
+    color: white; /* Change color for visibility */
+    font-size: 12px; /* Adjust font size */
+}
+
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+  }
+
+  /* ------------------premium products----------------*/
+ 
+.premiumproductname a{
+    font-weight: 700;
+    font-family: inter_regular, fallback-inter_regular, Arial, sans-serif;;
+    border: none;
+    color: black;
+    padding: 15px;
+    width: 100%;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+div.premiumProdutsContainer {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping to keep everything in one row */
+    overflow-x: auto; /* Allow horizontal scrolling if content exceeds the viewport width */
+    margin: 15px;
+    gap: 10px; /* Adds space between each product */
+    margin-top: 18px;
+    border: 3px solid rgb(247, 245, 245);
+}
+div.premiumItems {
+    border: 1px solid #ccc;
+    width: 190px;
+    flex: 0 0 auto; /* Prevents the gallery items from stretching */
+}
+
+div.premiumItems img {
+    width: 100%;
+    height: 180px;
+}
+div.premiumItems:hover {
+    border: 2px solid #777;
+}
+  
+div.desc {
+    padding: 15px;
+    text-align: center;
+    font-family: inter_semi_bold, fallback-inter_semi_bold, Arial, sans-serif;;
+}
+
+/* -----------premium products2----------------*/
+
+
+.premiumproductname2 a{
+    font-weight: 700;
+    font-family: inter_regular, fallback-inter_regular, Arial, sans-serif;;
+    border: none;
+    color: black;
+    padding: 15px;
+    width: 100%;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+div.premiumProdutsContainer2 {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping to keep everything in one row */
+    overflow-x: auto; /* Allow horizontal scrolling if content exceeds the viewport width */
+    margin: 15px;
+    gap: 10px; /* Adds space between each product */
+    margin-top: 18px;
+    border: 3px solid rgb(247, 245, 245);
+}
+div.premiumItems2 {
+    border: 1px solid #ccc;
+    width: 190px;
+    flex: 0 0 auto; /* Prevents the gallery items from stretching */
+}
+
+div.premiumItems2 img {
+    width: 100%;
+    height: 180px;
+}
+div.premiumItems2:hover {
+    border: 2px solid #777;
+}
+  
+div.desc2 {
+    padding: 15px;
+    text-align: center;
+    font-family: inter_semi_bold, fallback-inter_semi_bold, Arial, sans-serif;;
+}
+
+/* ----------------top stories brand category-------*/
+
+.topStoriesBrandCategory a{
+    font-weight: 700;
+    font-family: inter_regular, fallback-inter_regular, Arial, sans-serif;;
+    border: none;
+    color: black;
+    padding: 15px 0 19px 0; 
+    width: 100%;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin-right: 18px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+.topStoriesSpan {
+    color: #565656;
+    text-transform: uppercase;
+    margin-right: 4px;
+    font-size: 14px;
+}
+.links{
+    color: #565656;
+    padding: 0 5px;
+    border-right: 1px solid #333;
+    font-size: 14px;
+    word-spacing: 5px;
+}
+.kingstoreh2{
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+.kingstoreinfobox{
+    margin: 0 auto;
+    padding: 30px;
+    color: #878787;
+    background-color: #f5f5f5;
+}
+.topstoriesbox{
+    
+    color: #666;
+    background-color: #f5f5f5;
+    margin: 0 auto;
+    text-align: left;
+    padding: 25px;
+    line-height: 1.5;
+}
+
+/* ----------- contactlinkcontainer-----------*/
+
+.overallcontactlinkcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1b1818;
+    padding: 20px;
+    width: 100%;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+.contentbox {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+    padding: 20px;
+    background-color: #1b1818;
+    width: 100%;
+}
+
+.contactlinks {
+    font-family: inter_semi_bold, fallback-inter_semi_bold, Arial, sans-serif;
+    font-size: 12px;
+    color: #fff;
+    display: block;
+    line-height: 18px;
+    margin-bottom: 8px;
+    text-decoration: none;
+}
+.contactlinks:hover{
+    text-decoration: underline;
+}
+
+.about, .group_companies, .help, .customerPolicy, .mailUs, .regofficeaddress {
+    color: #878787;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+p{
+    white-space: nowrap;
+    color: #fff;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.textsocialmedia, .regofficeaddressbox p {
+    font-size: 12px;
+    line-height: 18px;
+    color: #878787;
+
+}
+
+.socialmedia {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.socialmedia a i {
+    color: #fff;
+    font-size: 20px;
+    padding: 3px;
+}
+
+.footer {
+    border-top: 1px solid #454d5e;
+    padding: 25px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #1b1818;
+}
+
+.becomeseller, .advertize, .giftcard, .helpcenter, .copyright {
+    display: flex;
+    align-items: center;
+}
+
+.footerspan {
+    color: white;
+    margin-left: 8px;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.paymentmethods img {
+    width: auto;
+    height: 28px;
+}

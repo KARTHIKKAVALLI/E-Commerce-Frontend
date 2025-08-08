@@ -1,0 +1,223 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* CSS for brand and navigation */
+.brand a {
+    letter-spacing: 5px;
+    font-family: Monospace;
+    font-size: xx-large;
+    text-decoration: none;
+    color: black;
+    font-weight: 800;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: bisque;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin: 0 10px;
+}
+
+li a {
+    color: black;
+    font-size: 24px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+/* Search bar container styling */
+.search-container {
+    flex: 1;
+    max-width: 500px;
+}
+
+/* Styling for the search form */
+form.example {
+    display: flex;
+    width: 100%;
+}
+
+form.example input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    background: #f1f1f1;
+}
+
+form.example button {
+    width: 50px;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    cursor: pointer;
+}
+
+form.example button:hover {
+    background: #0b7dda;
+}
+
+/* Align icons properly */
+ul li a i {
+    vertical-align: middle;
+}
+
+/* Product line styling */
+#ulproductline {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.productlinks li a {
+    float: left;
+    display: block;
+    color: white;
+    font-size: large;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* --------------------side filter bar -------------------*/
+
+
+
+.sidefilter ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 20%;
+    background-color: #f1f1f1;
+    position:absolute;
+    height: 100%;
+    overflow: auto;
+    display: block;
+  }
+  
+  .sidefilter  li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+    text-align: center;
+  }
+  .sidefilter  li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+/* drop down for brand in side bar ----------*/
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 0;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+  }
+
+  /* ---------------- card container ----------------------*/
+/* Container for all cards */
+.card-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap onto the next line */
+    justify-content: space-between; /* Space cards evenly */
+    gap: 5px; /* Space between the cards */
+    padding: 10px;
+    margin-left: 300px;
+  }
+  
+  /* Card container styling */
+  div.card {
+    margin: 5px;
+    border: 1px solid #ccc;
+    width: calc(33.33% - 20px); /* 3 cards per row, minus the gap */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+    z-index: 1;
+  }
+  
+  /* Hover effect for card */
+  div.card:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    border-color: #777;
+  }
+  
+  /* Image styling */
+  div.card img {
+    width: 100%;
+    height: 300px; /* Set a fixed height for uniformity */
+    object-fit:contain;
+  }
+  
+  /* Description container */
+  div.desc {
+    padding: 15px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    color: #333;
+    height: 50px;
+  }
+  .checked {
+    color: orange;
+  }
