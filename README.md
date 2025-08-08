@@ -28,10 +28,15 @@ This project provides an interactive shopping interface for users, featuring pro
 
 📦 ECommerceFrontent
 ┣ 📂 assets # Images, icons, and other resources
+
 ┣ 📂 css # Stylesheets
+
 ┣ 📂 js # JavaScript files
+
 ┣ 📜 index.html # Home page
+
 ┣ 📜 README.md # Project documentation
+
 
 👨‍💻 Author
 Kavali Venkata Sai Sri Karthik
