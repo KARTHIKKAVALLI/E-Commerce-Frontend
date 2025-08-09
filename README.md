@@ -37,6 +37,8 @@ This project provides an interactive shopping interface for users, featuring pro
 ┣ 📂 Other Resources
 
 
+
+
 👨‍💻 Author
 
 Kavali Venkata Sai Sri Karthik
