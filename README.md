@@ -27,11 +27,12 @@ This project provides an interactive shopping interface for users, featuring pro
 ## 📂 Project Structure
 
 📦 ECommerceFrontent
+
 ┣ 📂 assets
 
-┣ 📂  Images # Stylesheets
+┣ 📂  Images 
 
-┣ 📂 icons # JavaScript files
+┣ 📂 icons
 
 ┣ 📂 Other Resources
 
